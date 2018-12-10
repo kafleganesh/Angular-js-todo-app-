@@ -1,0 +1,17 @@
+.todo-view{
+ text-align: center;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+.todo-view-delete {
+    margin-left:  15px;
+    margin-top: 10px;
+}
+
+.todo-input{
+    width: 25%;
+
+}
+.todo-view-add{
+    margin-left: 15px;
+}

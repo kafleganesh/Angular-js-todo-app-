@@ -1,0 +1,30 @@
+<div class="container todo-view border border-success">
+  <div class="all-elements">
+  <h1>Todo Application</h1>
+
+  <input type="text" class="todo-input"  placeholder = "Enter the task" todoTitle.value = "" [(ngModel)] = "todoTitle" >
+
+  <button  class="btn btn-primary btn-sm todo-view-add" (click)= "addTodo()">Add new task</button>
+  <div class="user-input" *ngFor = "let todo of todos"> 
+  <!-- <button (click)="onClickMe(newTodo.value); newTodo.value = ''"> Add Task</button> -->
+      <span>{{todo.title}}</span>
+      <button (click) = "deleteTodo(todo.id)" class="todo-view-delete btn btn-outline-danger btm-sm"> Delete</button><br>
+      <!-- <p>{{todo.id}}</p> -->
+</div>
+</div>
+</div>
+
+<!-- view for the api call
+<div class="git-api">
+  Enter user name 
+  <input [(ngModel)] = "username">
+  <button (click)= "search()">search</button><br>
+  <div *ngIf = "response">
+  <p>username is : {{response.login}}</p>
+  <p>Number of followers: {{response.followers}}</p>
+  <p>Number of followings :{{response.following}}</p>
+  <p>Github Link : {{response.html_url}}</p>
+</div>
+
+</div> -->
+
